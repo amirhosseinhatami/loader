@@ -1,0 +1,100 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main{
+	background-color: #eee;
+	display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.loader{
+	background: white;
+	border: 3px black solid;
+	border-bottom-color: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	margin-right: 20px;
+	margin: 30px;
+	padding: 5px;
+
+    display: block;
+    
+	position: relative;
+	order: 2;
+  
+
+  
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0);
+		border-right-color: black;
+		border-left-color:black;
+		border-top-color:black;
+		border-bottom-color:white;
+	}
+	15%{
+		transform: rotate(60deg);
+		border-right-color: green;
+		border-left-color:green;
+		border-top-color:green;
+		border-bottom-color:white;
+	}
+	30%{
+		border-right-color: blue;
+		border-left-color:green;
+		border-top-color:green;
+		border-bottom-color:white;
+		transform: rotate(120deg)
+	}
+	45%{
+			border-right-color: blue;
+		border-left-color:green;
+		border-top-color:red;
+		border-bottom-color:white;
+		transform: rotate(180deg)
+	}
+	60%{
+		border-right-color: blue;
+		border-left-color:green;
+		border-top-color:red;
+		border-bottom-color:white;
+		transform: rotate(240deg)
+	}
+	75%{
+		border-right-color: blue;
+		border-left-color:yellow;
+		border-top-color:yellow;
+		border-bottom-color:white;
+		transform: rotate(300deg)
+	}
+	100%{
+		border-right-color: blue;
+		border-left-color:green;
+		border-top-color:red;
+		border-bottom-color:white;
+		transform: rotate(360deg)
+	}
+	
+	
+}
+.text{
+	font-family: 'Grandstander', cursive;
+	text-align: center;
+	order: 3;
+}
+
